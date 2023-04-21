@@ -108,13 +108,7 @@ Please read the [CONTRIBUTING.md](https://chat.openai.com/c/CONTRIBUTING.md) fil
 - [Docker](https://www.docker.com/)
 - [Kubernetes](https://kubernetes.io/)
 - [Skaffold](https://skaffold.dev/)
-- [kafkacat]([https://github](https://github/)
-
-![](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2738%27/%3e)![Nilesh Kant](https://chat.openai.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAGNmyxaK9NJ3otUloOMej0iTnDUoKDjGEQtxO6nFMvk%3Ds96-c&w=96&q=75)
-
-continue
-
-.com/edenhill/kafkacat)
+- [kafkacat](https://github.com/edenhill/kafkacat)
 
 ## Troubleshooting
 
