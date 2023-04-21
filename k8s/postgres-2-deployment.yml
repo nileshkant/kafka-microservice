@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres-2
+  template:
+    metadata:
+      labels:
+        app: postgres-2
+    spec:
+      containers:
+        - name: postgres-2
+          image: postgres:13
+          env:
+            - name: POSTGRES_USER
+              value: "service2user"
+            - name: POSTGRES_PASSWORD
+              value: "service2pass"
+            - name: POSTGRES_DB
+              value: "service2db"
+          ports:
+            - containerPort: 5432
