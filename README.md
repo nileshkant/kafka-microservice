@@ -95,10 +95,6 @@ Press Ctrl+C to exit.
 
 MIT License
 
-## Contributing
-
-Please read the [CONTRIBUTING.md](https://chat.openai.com/c/CONTRIBUTING.md) file for details on how to contribute to this project.
-
 ## Acknowledgments
 
 - [Express.js](https://expressjs.com/)
