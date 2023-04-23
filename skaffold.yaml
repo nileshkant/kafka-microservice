@@ -4,14 +4,26 @@ metadata:
   name: my-microservices
 build:
   artifacts:
+    - image: admin-frontend
+      context: admin-frontend/
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.ts"
+            dest: .
     - image: service-1
       context: service-1/
+      docker:
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: "src/**/*.ts"
             dest: .
     - image: service-2
       context: service-2/
+      docker:
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: "src/**/*.ts"

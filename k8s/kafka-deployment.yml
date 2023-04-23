@@ -30,11 +30,8 @@ spec:
               value: "true"
             - name: KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR
               value: "1"
-          command:
-            - sh
-            - -c
-          args:
-            - "sleep 30; /etc/confluent/docker/run"
+            - name: KAFKA_PORT
+              value: ""
           ports:
             - name: internal
               containerPort: 9092

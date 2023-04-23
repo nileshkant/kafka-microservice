@@ -55,3 +55,13 @@ services:
     environment:
       POSTGRES_HOST: postgres-2
       POSTGRES_PORT: 5432
+
+  admin-frontend:
+    build:
+      context: ./admin-frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./admin-frontend:/app
+      - /app/node_modules
