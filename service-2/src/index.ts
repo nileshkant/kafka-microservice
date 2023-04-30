@@ -4,6 +4,7 @@ import express from "express";
 import AppDataSource from "./config/typeorm-config";
 import cookieParser from "cookie-parser";
 import logger from "./logger";
+import { startUserRegistrationConsumer } from "./kafka/consumers/userRegistrationConsumer";
 
 AppDataSource.initialize()
   .then(() => {
@@ -14,9 +15,11 @@ AppDataSource.initialize()
     app.use(express.json());
     app.use(cookieParser());
 
-    app.get("/", (req, res) => {
+    app.get("/welcome", (req, res) => {
       res.send("Hello World! server 2");
     });
+
+    startUserRegistrationConsumer();
 
     const PORT = process.env.PORT || 3001;
     app.listen(PORT, () => {

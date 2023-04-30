@@ -14,7 +14,7 @@ AppDataSource.initialize()
     app.use(express.json());
     app.use(cookieParser());
 
-    app.get("/", (req, res) => {
+    app.get("/welcome", (req, res) => {
       res.send("Hello World!");
     });
 
